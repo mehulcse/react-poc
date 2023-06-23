@@ -51,7 +51,7 @@ const columns: GridColDef[] = [
 
 
 export default function Users() {
-	const {isLoading, isFetching, data: users} = useQuery('get-users', fetchUsers);
+	const {data: users} = useQuery('get-users', fetchUsers);
 
 	return (
 		<Box sx={{
